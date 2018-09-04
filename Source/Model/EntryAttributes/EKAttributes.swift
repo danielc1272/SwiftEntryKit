@@ -21,6 +21,9 @@ public struct EKAttributes {
     
     // MARK: Display Attributes
     
+    /** Presentation window accesibility identifier **/
+    public var windowIdentifier: String?
+    
     /** Entry presentation window level */
     public var windowLevel = WindowLevel.statusBar
     

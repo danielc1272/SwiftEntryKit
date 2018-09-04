@@ -50,6 +50,7 @@ final class EKWindowProvider {
         entryVC.setStatusBarStyle(for: attributes)
 
         entryWindow.windowLevel = attributes.windowLevel.value
+        entryWindow.accessibilityIdentifier = attributes.windowIdentifier
         if presentInsideKeyWindow {
             entryWindow.makeKeyAndVisible()
         } else {
